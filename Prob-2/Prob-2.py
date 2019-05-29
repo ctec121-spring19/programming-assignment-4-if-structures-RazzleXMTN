@@ -22,7 +22,9 @@ def main():
     hours = eval(input("How many hours have you worked this week? "))
     #formulas
     
-    othours = hours > 40
+    othours = hours - 40
+    if othours < 0:
+        othours = 0
     regwage = hours * wage
     otwage = (wage * 1.5) * othours
     tax = (regwage + otwage) * 0.20
@@ -42,6 +44,7 @@ def main():
     print("wage: ", wage)
     print("Regular wages: ", regwage)
     print("Overtime Wages: ", otwage)
+    print("Total Wages: ", regwage + otwage)
     print("Tax Witholding: ", tax)
     print("Medical Withholding: ", medical)
     print("Take Home Pay: ", (regwage+otwage)-(tax+medical))

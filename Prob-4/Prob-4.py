@@ -3,7 +3,7 @@
 #   Programming Assignment 4
 #     Prob-4.py
 
-# <YOUR NAME>
+# <Matthew Russell>
 
 # Author: Bruce Elgort
 # Date: July 12, 2017

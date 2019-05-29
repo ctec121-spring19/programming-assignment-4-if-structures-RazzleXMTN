@@ -15,10 +15,10 @@ def shippingCost(orderSubTotal):
     return shippingCost
 
 def unitTest(subtotal):
-    print("Shipping cost if subtotal < 10.00:\t", shippingCost(subtotal))
+    print("Expected Value: 2.99, Shipping cost if subtotal < 10.00:\t", shippingCost(5.99))
     # enter additional test code here
-    print("Your subtotal is", subtotal)
-
+    print("Expected value: 0.0, shipping cost if subtotal > 10.00:\t", shipping cost(11.00))
+    print("Expected value: 0.0, shipping cost if subtotal = 10.00:\t", shippingCost(10.00))
 
 if __name__ == "__main__":
-    unitTest(9.99)
+    unitTest()
